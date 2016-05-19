@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            $(".p1").click(function () {
+                $(this).hide();
+            });
+        });
+
+
+        $(document).ready(function(){
+            $(".hide1").click(function(){
+                $("p").hide();
+            });
+            $(".show1").click(function(){
+                $("p").show();
+            });
+        });
+
+        $(document).ready(function () {
+            $("h4").click(function () {
+                $(".t1").fadeOut();
+                $(".t2").fadeOut("slow");
+                $(".t3").fadeOut(4000);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".ptt").click(function () {
+                $(".t4").fadeIn();
+                $(".t5").fadeIn("slow");
+                $(".t6").fadeIn(4000);
+            });
+        });
+
+        $(document).ready(function () {
+            $(".flip").click(function () {
+                $(".panel").slideToggle("slow");
+            });
+        });
+
+
+        var i =1;
+        $(document).ready(function()
+        {
+            $("button").click(function(){
+
+               $("#p9").css("color","red")
+                       .slideUp(2000)
+                       .slideDown(2000);
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        div.panel,p.flip{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            border: 1px solid #e14f66;
+        }
+
+        div.panel{
+            height: 100%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">If you click on me, I will disappear.</p>
+    <p class="p1">5If you click on me, I will disappear.</p>
+    <p class="p1">4If you click on me, I will disappear.</p>
+    <p class="p1">2If you click on me, I will disappear.</p>
+    <h2>来点下</h2>
+    <h3>来点下</h3>
+    <button type="button">Click me</button>
+    <button class="hide1" type="button">Click me Hide</button>
+    <button class="show1" type="button">Click me Show</button>
+    <a href="nav.html">aaaaaa</a>
+
+
+    <h4>我们看看这里淡出clickMe</h4>
+    <img class="t1" src="img/3hgirl.jpg" alt="1">
+    <img class="t2" src="img/3hgirl.jpg" alt="2">
+    <img class="t3"  src="img/3hgirl.jpg" alt="3">
+
+    <h4 class="ptt">我们看看这里淡入clickMe</h4>
+    <img class="t4" src="img/3hgirl.jpg" style="display:none" alt="1">
+    <img class="t5" src="img/3hgirl.jpg" style="display:none" alt="2">
+    <img class="t6"  src="img/3hgirl.jpg" style="display:none" alt="3">
+
+    <div class="panel">
+        <img src="img/111.jpg" alt="4">
+    </div>
+    <p class="flip">请点击这里</p>
+
+
+    <p id="p9">jQuery 乐趣十足！</p>
+    <button>点击这里</button>
+
+</body>
+</html>

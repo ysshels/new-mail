@@ -1,0 +1,100 @@
+/*暖色导航一*/
+.nav-info{
+    color: burlywood;
+}
+.navbar-worm{
+    background-color: #eeeeee;
+    margin-top: 20px;
+    font:20px verdana,arial ;
+}
+.navbar-worm ul{
+    padding: 0; /*将默认的内边距去掉*/
+    margin: 0; /*将默认的外距去掉*/
+}
+/*加入浮动让nav的li向左浮动,并设置每个li的样式*/
+.navbar-worm li{
+    list-style: none;/*将默认的列表符号去掉*/
+    float: left;
+    border:1px solid burlywood;
+    /*background: #555555;*/
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/*用选择器的时候先写上一级标签名字，用逗号隔开，在继续下级类名*/
+/*设置a标签的初始状态*/
+.navbar-worm a:link{
+    color: wheat;
+    background: burlywood;
+    text-decoration: none;
+}
+/*设置a标签的初始状态的文字状态*/
+.navbar-worm a:visited{
+    color: #eeeeee;
+    text-decoration: underline; /*去掉文字下面的线*/
+}
+/*设置鼠标滑过的效果*/
+.navbar-worm a:hover{
+    color: #eeeeee;
+    font-weight: bold;
+    background: yellow;
+}
+.nav-first{
+    float: left;
+}
+
+.nav-second{
+    float: left;
+}
+
+.nav-three{
+    float: left;
+}
+
+.nav-four{
+    float: left;
+}
+<!---->
+
+.nav-info-soft{
+    color: #ed9daa;
+}
+.navbar-soft{
+    background-color: #eeeeee;
+    margin-top: 20px;
+    font:20px verdana,arial ;
+}
+.navbar-soft ul{
+    padding: 0; /*将默认的内边距去掉*/
+    margin: 0; /*将默认的外距去掉*/
+}
+/*加入浮动让nav的li向左浮动,并设置每个li的样式*/
+.navbar-soft li{
+    list-style: none;/*将默认的列表符号去掉*/
+    float: left;
+    border:1px solid #e14f66;
+    padding: 3px;
+}
+
+/*用选择器的时候先写上一级标签名字，用逗号隔开，在继续下级类名*/
+/*设置a标签的初始状态*/
+.navbar-soft a:link{
+    color: wheat;
+    background:  #ed9daa;
+    text-decoration: none;
+}
+/*设置a标签的初始状态的文字状态*/
+.navbar-soft a:visited{
+    color: #ffcc00;
+    text-decoration: underline; /*去掉文字下面的线*/
+}
+/*设置鼠标滑过的效果*/
+.navbar-soft a:hover{
+    color: #eeeeee;
+    font-weight: bold;
+    background: #ff00fe;
+}
+
+.checkedon{
+    background: #ec8e75;
+}
